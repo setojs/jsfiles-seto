@@ -1,0 +1,121 @@
+var math {};
+math.number1 = 0;
+math.number2 = 0;
+math.pi = Math.PI;
+
+function say(message) {
+    alert(message)
+}
+
+function ask(message) {
+    var answer = prompt(message) return answer
+}
+
+function add(num1, num2, inputtype) {
+    if (inputtype == "t") {
+        math.number1 = parseInt(num1);
+        math.number2 = parseInt(num2);
+        return math.number1 + math.number2
+    } else if (inputtype == "n") {
+        return num1 + num2
+    } else {
+        return "Error: Unknown input type"
+    }
+}
+
+function minus(num1, num2, inputtype) {
+    if (inputtype == "t") {
+        math.number1 = parseInt(num1);
+        math.number2 = parseInt(num2);
+        return math.number1 - math.number2
+    } else if (inputtype == "n") {
+        return num1 - num2
+    } else {
+        return "Error: Unknown input type"
+    }
+}
+
+function multiply(num1, num2, inputtype) {
+    if (inputtype == "t") {
+        math.number1 = parseInt(num1);
+        math.number2 = parseInt(num2);
+        return math.number1 * math.number2
+    } else if (inputtype == "n") {
+        return num1 * num2
+    } else {
+        return "Error: Unknown input type"
+    }
+}
+
+function divide(num1, num2, inputtype) {
+    if (inputtype == "t") {
+        math.number1 = parseInt(num1);
+        math.number2 = parseInt(num2);
+        return math.number1 / math.number2
+    } else if (inputtype == "n") {
+        return num1 / num2
+    } else {
+        return "Error: Unknown input type"
+    }
+}
+
+function tonumber(string) {
+    return parseInt(string)
+}
+
+function totext(number) {
+    return number.toString()
+}
+
+function getinput(idofinput) {
+    return document.getElementById(idofinput).value
+}
+
+function change(id, towhat) {
+    document.getElementById(id).innerHTML = towhat
+}
+
+function website(URL, type) {
+    if (type == 1) {
+        window.location.href = URL
+    } else if (type == 2) {
+        window.open(URL)
+    } else {
+        alert("'"
+            type + "' is no a valid type definition")
+    }
+}
+
+function date() {
+    return new Date()
+}
+
+function time() {
+    var d = new Date();
+    var time = d.getHours + ":" + d.getMinutes
+    return time
+}
+
+function length(text) {
+    return text.length
+}
+
+function nospace(text) {
+    return text.trim()
+}
+
+function uppercase(text) {
+    return text.toUpperCase()
+}
+
+function lowercase(text) {
+    return text.toLowerCase()
+}
+
+function cuttext(text, from, to) {
+    return text.slice(from, to)
+}
+
+function replacetext(text, from, to) {
+    return text.replace("/" + from + "/g", to)
+}
