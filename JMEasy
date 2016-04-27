@@ -8,7 +8,7 @@ function say(message) {
 }
 
 function ask(message) {
-    var answer = prompt(message) return answer
+    return prompt(message)
 }
 
 function add(num1, num2, inputtype) {
